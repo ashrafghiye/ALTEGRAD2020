@@ -11,7 +11,7 @@
 The goal of this project is to study and apply machine learning techniques to a real-world regression problem. In this regression task, each sample corresponds to a researcher, i.e. an author of research papers, and the goal is to build a model that can predict accurately the h-index of each author. 
 To build the model, we have access to two types of data: 
 
-1. **Collaboration Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
+1. **Co-author Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
 2. **Abstracts** of the top-cited papers for each author.
 
 
@@ -28,9 +28,11 @@ We focus here on using artificielle intelligence to learn a predictive function 
 
 To get the data of this project you will have to run `get_data.sh`.
 
-> `chmod +x get_data.sh`
-> 
-> `./get_data.sh`
+```
+$ chmod +x get_data.sh
+$ ./get_data.sh
+```
+
 
 All the necessary files will be downloaded in `data` folder, these files include:
 
@@ -58,9 +60,11 @@ his/her h-index.
 
 We have extracted some new features and created a new weighted graph of collaboration. To get all of these features into `features` folder you can run the script `feature_generators.sh` which extract the hand-crafted features explained in the report.
 
-> `chmod +x feature_generators.sh`
-> 
-> `./feature_generators.sh`
+```
+$ chmod +x feature_generators.sh
+$ ./feature_generators.sh
+```
+
 
 ## Training 
 
