@@ -1,12 +1,3 @@
-import pandas as pd
-import numpy as np
-import networkx as nx
-import matplotlib.pyplot as plt
-from scipy.sparse.linalg import eigs
-from scipy import sparse
-from random import randint
-from sklearn.cluster import KMeans
-
 """
 This script Generate features for each author based on the 2 graphes in the dataset:
 - the weighted graph 
@@ -45,6 +36,16 @@ It ouputs one file:
 - graph_features.csv
 
 """
+
+import pandas as pd
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+from scipy.sparse.linalg import eigs
+from scipy import sparse
+from random import randint
+from sklearn.cluster import KMeans
+
 
 def spectral_clustering(G, k):
     """
