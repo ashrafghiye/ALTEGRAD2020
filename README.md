@@ -31,4 +31,16 @@ that have published papers in computer science venues
 * `train.csv`: 23,124 labeled authors. Each row of the file contains the ID of an author and
 his/her h-index.
 * `test.csv`: this file contains the IDs of 208,115 authors unlabelled.
+* `paper_embeddings_64.csv`: Doc2Vec embeddings of each paper.
+* `Text.json`: pre-processed texts for each abstract.
+
+# Features
+
+We have extracted some new features and created a new weighted graph of collaboration. To get all of these features into `features` folder you can run the script `feature_generators.sh` which extract the hand-crafted features explained in the report.
+
+# Model
+
+After you have run the previous two scripts, you can run `model.py` to train the model and see some benchmarks scores. After that an inference step is made by running `inference.py` which generates a prediction for all the authors in `test.csv`.
+
+
 
