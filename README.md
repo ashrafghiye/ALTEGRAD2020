@@ -42,7 +42,7 @@ We have extracted some new features and created a new weighted graph of collabor
 
 # Model
 
-After you have run the previous two scripts, you can run `model.py` to train the model and see some benchmarks scores. After that an inference step is made by running `inference.py` which generates a prediction for all the authors in `test.csv`.
+After you have run the previous two scripts, you can run `model.py` to train the model and see some benchmarks scores. After that an inference step is made by running `inference.py` which generates a `.csv` prediction for all the authors in the testing set.
 
 
 
