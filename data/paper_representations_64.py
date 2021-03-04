@@ -13,8 +13,8 @@ pattern = re.compile(r'(,){2,}')
 
 stop_words = set(stopwords.words('english')) 
 
-fw = open("data/abstracts_processed.txt","w")
-f = open("data/abstracts.txt","r")
+fw = open("abstracts_processed.txt","w")
+f = open("abstracts.txt","r")
 
 # loads the inverted abstracts and stores them as id-abstracts in a dictionary dic and in a folder fw
 dim = 64
@@ -50,7 +50,7 @@ del doc
 model = Doc2Vec(tagged_data, vector_size = dim, window = 5, min_count = 2, epochs = 100, workers=10)
 
 # store the embeddings in "paperID":array format
-f = open("data/paper_embeddings_64.txt","w")
+f = open("paper_embeddings_64.txt","w")
 for tid in dic:
     sentence = dic[tid]
     f.write(str(tid)+":"+np.array2string(model.infer_vector(sentence), formatter={'float_kind':lambda x: "%.8f" % x})+"\n")    
