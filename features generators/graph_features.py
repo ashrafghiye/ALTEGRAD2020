@@ -185,6 +185,6 @@ Graph_features["min_WG_pg"] = min_WG_pg
 
 print("Neighbours features generated")
 
-Graph_features.to_csv("features/graph_features.csv",index=False)
+Graph_features.to_csv("../features/graph_features.csv",index=False)
 
 print("Done")
