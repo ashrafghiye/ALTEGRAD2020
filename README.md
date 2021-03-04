@@ -39,9 +39,7 @@ of its abstract. Roughly speaking, an inverted index is a dictionary where the k
 to words and the values are lists of the positions of the corresponding words in the abstract. For
 example, the abstract “that is all that I know” would be represented as follows:
 
-> paper_ID----{"IndexLength":5,"InvertedIndex":
-> 
-> {"that":[0,3],"is":[1],"all":[2],"I":[4],"know":[5]}}
+> paper_ID----{"IndexLength":5,"InvertedIndex": {"that":[0,3],"is":[1],"all":[2],"I":[4],"know":[5]}}
 
 * `author_papers.txt`: list of authors and the IDs of their top-cited papers.
 * `collaboration_network.edgelist`: a co-authorship network where nodes correspond to authors
