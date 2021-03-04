@@ -29,6 +29,7 @@ We focus here on using artificielle intelligence to learn a predictive function 
 To get the data of this project you will have to run `get_data.sh`.
 
 > `chmod +x get_data.sh`
+> 
 > `./get_data.sh`
 
 All the necessary files will be downloaded in `data` folder, these files include:
@@ -53,8 +54,8 @@ his/her h-index.
 We have extracted some new features and created a new weighted graph of collaboration. To get all of these features into `features` folder you can run the script `feature_generators.sh` which extract the hand-crafted features explained in the report.
 
 > `chmod +x feature_generators.sh`
-> `./feature_generators.sh`
 > 
+> `./feature_generators.sh`
 
 ## Training 
 
