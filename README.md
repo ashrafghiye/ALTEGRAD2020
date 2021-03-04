@@ -10,8 +10,8 @@ Altegrad Challenge
 The goal of this project is to study and apply machine learning techniques to a real-world regression problem. In this regression problem, each sample corresponds to a researcher, i.e. an author of research papers, and the goal is to build a model that can predict accurately the h-index of each author. 
 To build the model, we have access to two types of data: 
 
-1- **Collaboration Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
-2- **Abstracts** of the top-cited papers of each author.
+1. **Collaboration Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
+2. **Abstracts** of the top-cited papers for each author.
 
 
 # H-index
