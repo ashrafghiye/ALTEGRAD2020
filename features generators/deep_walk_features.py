@@ -47,7 +47,7 @@ def deepwalk(G, num_walks, walk_length, n_dim):
     return model
 
 
-G = nx.read_edgelist('data/collaboration_network.edgelist', delimiter=' ', nodetype=int)
+G = nx.read_edgelist('../data/collaboration_network.edgelist', delimiter=' ', nodetype=int)
 n_nodes = G.number_of_nodes()
 n_edges = G.number_of_edges() 
 print('Number of nodes:', n_nodes)
