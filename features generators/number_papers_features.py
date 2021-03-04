@@ -54,4 +54,4 @@ data["mean_G_neigh_papers"] = mean_G_neigh_papers
 data["max_G_neigh_papers"] = max_G_neigh_papers
 data["min_G_neigh_papers"] = min_G_neigh_papers
 
-data.to_csv("features/number_of_papers_features.csv", index=False)
+data.to_csv("../features/number_of_papers_features.csv", index=False)
