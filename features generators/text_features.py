@@ -6,7 +6,7 @@ import ast
 import re
 
 # read the file to create a dictionary with author key and paper list as value
-f = open("data/author_papers.txt","r")
+f = open("../data/author_papers.txt","r")
 papers_set = set()
 d = {}
 for l in f:
@@ -15,7 +15,7 @@ for l in f:
 f.close()
 
 # read the embeddings of each paper
-f = open("data/paper_embeddings_64.txt","r")
+f = open("../data/paper_embeddings_64.txt","r")
 papers = {}
 s = ""
 pattern = re.compile(r'(\s){2,}')
@@ -31,7 +31,7 @@ f.close()
 # the author representation is set to be the average of its papers' representations
 pattern = re.compile(r'(,){2,}')
 dim=64
-df = open("features/author_embedding.csv","w")
+df = open("../features/author_embedding.csv","w")
 s = "authorID" + "," + ",".join([str(i) for i in range(dim)])
 df.write(s+"\n")
 for author in d:
