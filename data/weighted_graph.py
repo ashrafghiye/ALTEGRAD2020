@@ -11,7 +11,7 @@ import itertools
 
 
 #read the collaboration graph
-G = nx.read_edgelist("data/collaboration_network.edgelist")
+G = nx.read_edgelist("collaboration_network.edgelist")
 n_nodes = G.number_of_nodes()
 n_edges = G.number_of_edges() 
 print('Number of nodes:', n_nodes)
@@ -59,4 +59,4 @@ for e in G.edges():
         G[e[0]][e[1]]['weight'] = 1.0 #supposing the paper has 2 authors.. (strongest relation)
 
 G.remove_edges_from(nx.selfloop_edges(G))
-nx.write_weighted_edgelist(G, "data/denser_graph.edgelist")
+nx.write_weighted_edgelist(G, "denser_graph.edgelist")
