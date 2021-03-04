@@ -40,6 +40,7 @@ to words and the values are lists of the positions of the corresponding words in
 example, the abstract “that is all that I know” would be represented as follows:
 
 > paper_ID----{"IndexLength":5,"InvertedIndex":
+> 
 > {"that":[0,3],"is":[1],"all":[2],"I":[4],"know":[5]}}
 
 * `author_papers.txt`: list of authors and the IDs of their top-cited papers.
@@ -49,7 +50,7 @@ that have published papers in computer science venues
 his/her h-index.
 * `test.csv`: this file contains the IDs of 208,115 authors unlabelled.
 * `paper_embeddings_64.csv`: Doc2Vec embeddings of each paper.
-* `Text.json`: plain texts for each abstract. The format is paperID: abstract in plain text..
+* `Text.json`: plain texts for each abstract. The format is paperID: abstract in plain text, it is useful to performe NLP downstream tasks on this file like text embeddings.
 
 ## Install the requirements
 
