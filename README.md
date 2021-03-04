@@ -8,7 +8,7 @@
  
 # Problem Description
 
-The goal of this project is to study and apply machine learning techniques to a real-world regression problem. In this regression problem, each sample corresponds to a researcher, i.e. an author of research papers, and the goal is to build a model that can predict accurately the h-index of each author. 
+The goal of this project is to study and apply machine learning techniques to a real-world regression problem. In this regression task, each sample corresponds to a researcher, i.e. an author of research papers, and the goal is to build a model that can predict accurately the h-index of each author. 
 To build the model, we have access to two types of data: 
 
 1. **Collaboration Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
@@ -17,7 +17,9 @@ To build the model, we have access to two types of data:
 
 # Motivation
 
-Quantifying success in science plays a key role in guiding funding allocations, recruitment decisions, and rewards. Recently, a significant amount of progresses have been made towards quantifying success in science. We focus here on using artificielle intelligence to learn a predictive function based on two types of data that can assess the quality of a researcher's work (his abstracts) and the quantity of his work (collaboration intensity).
+Quantifying success in science plays a key role in guiding funding allocations, recruitment decisions, and rewards. Recently, a significant amount of progresses have been made towards quantifying success in science. 
+
+We focus here on using artificielle intelligence to learn a predictive function based on two types of data that can assess the quality of a researcher's work (his abstracts) and the quantity of his work (collaboration intensity).
 
 # Data
 
