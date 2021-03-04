@@ -1,13 +1,3 @@
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import umap
-import ast
-import re
-from sklearn.cluster import Birch
-import scipy.stats as stat
-
 """
 This code generate features based on the topic of papers that the author has wrote.
 
@@ -25,6 +15,18 @@ This code will output one file:
 - author_topics_stats.csv
 
 """
+
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import umap
+import ast
+import re
+from sklearn.cluster import Birch
+import scipy.stats as stat
+
+
 ###########################Predict the topic of each paper#########################################################
 
 #load papers embeddings in order to do clustring
