@@ -1,5 +1,5 @@
 #!/bin/sh
-
+cd data
 gdown "https://drive.google.com/uc?id=1xFnj04M6GxTgjURDuuKC2VrGky0qxyB2"
 gdown "https://drive.google.com/uc?id=1e1FQa4BD1FaaiFVlGfzW46QRP-PiN5pK"
 gdown "https://drive.google.com/uc?id=1wc4rQt8UPwkLSB5IqeRIFGBZxAkBU2kd"
