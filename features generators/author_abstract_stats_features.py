@@ -18,7 +18,7 @@ import scipy.stats as stat
 
 
 # read the file to create a dictionary with authorID as key and papersID list as value
-f = open("data/author_papers.txt", "r")
+f = open("../data/author_papers.txt", "r")
 papers_set = set()
 author_papers_d = {}
 for line in f:
@@ -27,7 +27,7 @@ for line in f:
 f.close()
 
 # now, read length of each paper abstract
-abstract_length = pd.read_csv("data/abstract_word_count.csv", usecols=['paper_id', 'word_count'])
+abstract_length = pd.read_csv("../data/abstract_word_count.csv", usecols=['paper_id', 'word_count'])
 abstract_length = {paper_id:word_count for paper_id, word_count in zip(abstract_length['paper_id'], abstract_length['word_count'])}
 
 author_abstract_stats=pd.DataFrame()
