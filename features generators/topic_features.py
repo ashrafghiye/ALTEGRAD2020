@@ -28,7 +28,7 @@ This code will output one file:
 ###########################Predict the topic of each paper#########################################################
 
 #load papers embeddings in order to do clustring
-f = open("data/paper_embeddings_64.txt","r")
+f = open("../data/paper_embeddings_64.txt","r")
 papers = {}
 s = ""
 pattern = re.compile(r'(\s){2,}')
@@ -63,7 +63,7 @@ Topic_papers.to_csv("data/topic_papers.csv", index=False)
 ###########################Extract features for each author from the topics of its paper###########################
 
 # read the file to create a dictionary with authorID as key and papersID list as value
-f = open("data/author_papers.txt", "r")
+f = open("../data/author_papers.txt", "r")
 papers_set = set()
 author_papers_d = {}
 for line in f:
@@ -82,7 +82,7 @@ paper_topics = {paper_id:topic for paper_id, topic in zip(Topic_papers['paper_id
 #author contirbution in his major topic
 #author contirbution ratio = author contirbution/ number of papers
 
-df = open("features/author_topics_stats.csv", "w")
+df = open("../features/author_topics_stats.csv", "w")
 
 s = "authorID" + "," + ",".join(["diversity", "diversity_ratio", "major_topic", "contribution", "contribution_ratio"])
 df.write(s+"\n")
