@@ -70,8 +70,8 @@ def spectral_clustering(G, k):
 
 
 # load the graph    
-G = nx.read_edgelist('data/collaboration_network.edgelist', delimiter=' ', nodetype=int)
-WG = nx.read_edgelist('data/denser_graph.edgelist', nodetype=int, data=(("weight", float), ))
+G = nx.read_edgelist('../data/collaboration_network.edgelist', delimiter=' ', nodetype=int)
+WG = nx.read_edgelist('../data/denser_graph.edgelist', nodetype=int, data=(("weight", float), ))
 
 n_nodes = G.number_of_nodes()
 n_edges = G.number_of_edges() 
@@ -89,7 +89,7 @@ centrality_w = nx.eigenvector_centrality(WG)
 print("Centrality measures generated")
 
 # papers count dictionary, for each author how many papers does he wrote.
-df_papers = pd.read_csv('features/number_of_papers_features.csv', dtype={'authorID': str})
+df_papers = pd.read_csv('../features/number_of_papers_features.csv', dtype={'authorID': str})
 papers_dict = {key: val for key, val in zip(df_papers['authorID'].values, df_papers['number_of_papers'].values)}
 
 
