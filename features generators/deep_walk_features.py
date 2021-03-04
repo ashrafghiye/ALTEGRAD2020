@@ -1,11 +1,14 @@
+"""
+This script Generate a deepwalk features for each author based on the graph in the dataset
+"""
+
 import numpy as np
 import networkx as nx
 from random import randint
 from gensim.models import Word2Vec
 import pandas as pd
-"""
-This script Generate a deepwalk features for each author based on the graph in the dataset
-"""
+
+
 # Simulates a random walk of length "walk_length" starting from node "node"
 def random_walk(G, node, walk_length):
     
