@@ -35,7 +35,13 @@ To get the data of this project you will have to run `get_data.sh`.
 All the necessary files will be downloaded in `data` folder, these files include:
 
 * `abstracts.txt`: for each paper, this file contains the ID of the paper along with the inverted index
-of its abstract.
+of its abstract. Roughly speaking, an inverted index is a dictionary where the keys correspond
+to words and the values are lists of the positions of the corresponding words in the abstract. For
+example, the abstract “that is all that I know” would be represented as follows:
+
+> paper_ID----{"IndexLength":5,"InvertedIndex":
+> {"that":[0,3],"is":[1],"all":[2],"I":[4],"know":[5]}}
+
 * `author_papers.txt`: list of authors and the IDs of their top-cited papers.
 * `collaboration_network.edgelist`: a co-authorship network where nodes correspond to authors
 that have published papers in computer science venues
@@ -43,7 +49,7 @@ that have published papers in computer science venues
 his/her h-index.
 * `test.csv`: this file contains the IDs of 208,115 authors unlabelled.
 * `paper_embeddings_64.csv`: Doc2Vec embeddings of each paper.
-* `Text.json`: pre-processed texts for each abstract.
+* `Text.json`: plain texts for each abstract. The format is paperID: abstract in plain text..
 
 ## Install the requirements
 
