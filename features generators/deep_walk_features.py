@@ -67,4 +67,4 @@ for i, node in enumerate(G.nodes()):
 df = pd.DataFrame(embeddings)
 df["authorID"] = list(G.nodes())
 
-df.to_csv("features/deep_walk_features.csv",index=False)
+df.to_csv("../features/deep_walk_features.csv",index=False)
