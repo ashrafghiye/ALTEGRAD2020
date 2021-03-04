@@ -21,10 +21,18 @@ Quantifying success in science plays a key role in guiding funding allocations, 
 
 We focus here on using artificielle intelligence to learn a predictive function based on two types of data that can assess the quality of a researcher's work (his abstracts) and the quantity of his work (collaboration intensity).
 
-# Data
+# Getting Started
 
-To get the data of this project you will have to run `get_data.sh`, all the necessary files will be downloaded in `data` folder.
-These files include:
+## Download Data
+
+
+To get the data of this project you will have to run `get_data.sh`.
+
+> `chmod +x get_data.sh`
+> `./get_data.sh`
+
+All the necessary files will be downloaded in `data` folder, these files include:
+
 * `abstracts.txt`: for each paper, this file contains the ID of the paper along with the inverted index
 of its abstract.
 * `author_papers.txt`: list of authors and the IDs of their top-cited papers.
@@ -36,13 +44,25 @@ his/her h-index.
 * `paper_embeddings_64.csv`: Doc2Vec embeddings of each paper.
 * `Text.json`: pre-processed texts for each abstract.
 
-# Features
+## Install the requirements
+
+>  `pip install -U -r requirements.txt`
+
+## Generate Features
 
 We have extracted some new features and created a new weighted graph of collaboration. To get all of these features into `features` folder you can run the script `feature_generators.sh` which extract the hand-crafted features explained in the report.
 
-# Model
+> `chmod +x feature_generators.sh`
+> `./feature_generators.sh`
+> 
 
-After you have run the previous two scripts, you can run `model.py` to train the model and see some benchmarks scores. After that an inference step is made by running `inference.py` which generates a `.csv` prediction for all the authors in the testing set.
+## Training 
+
+After you have run the previous two scripts, you can run `model.py` to train the model and see some benchmarks scores. For more details about the model and other benchmarks refer to `final_report.pdf`.
+
+## Run a test
+
+After training the model we can run an inference step is made by running `inference.py` which generates a `.csv` prediction for all the authors in the testing set.
 
 
 
