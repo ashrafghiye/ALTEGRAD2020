@@ -1,10 +1,3 @@
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import networkx as nx
-import ast
-import re
 """
 This code create features for each author based on its number of papers and the number of papers for its neighbours
 
@@ -15,6 +8,16 @@ It take as input two files:
 It ouputs one file:
 - number_of_papers_features.csv
 """
+
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import networkx as nx
+import ast
+import re
+
+
 #read the graph file to find the neighbours for each author
 G = nx.read_edgelist('../data/collaboration_network.edgelist', delimiter=' ', nodetype=str)
 n_nodes = G.number_of_nodes()
