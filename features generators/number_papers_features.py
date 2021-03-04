@@ -23,7 +23,7 @@ print('Number of nodes:', n_nodes)
 print('Number of edges:', n_edges)
 
 # read the file to create a dictionary with author key and paper list as value
-f = open("data/author_papers.txt","r")
+f = open("../data/author_papers.txt","r")
 papers_set = set()
 d = {}
 for l in f:
