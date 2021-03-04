@@ -16,7 +16,7 @@ It ouputs one file:
 - number_of_papers_features.csv
 """
 #read the graph file to find the neighbours for each author
-G = nx.read_edgelist('data/collaboration_network.edgelist', delimiter=' ', nodetype=str)
+G = nx.read_edgelist('../data/collaboration_network.edgelist', delimiter=' ', nodetype=str)
 n_nodes = G.number_of_nodes()
 n_edges = G.number_of_edges() 
 print('Number of nodes:', n_nodes)
