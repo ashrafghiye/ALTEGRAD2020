@@ -28,6 +28,6 @@ for i, node in enumerate(G.nodes()):
 
 df = pd.DataFrame(features_line)
 df["authorID"] = list(G.nodes())
-df.to_csv("features/line_features.csv",index=False)
+df.to_csv("../features/line_features.csv",index=False)
 
 
