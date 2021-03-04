@@ -8,7 +8,7 @@ import re
 import community
 from easygraph.functions.graph_embedding.line import LINE
 
-G = nx.read_edgelist('data/denser_graph.edgelist', nodetype=str, data=(("weight", float), ))
+G = nx.read_edgelist('../data/denser_graph.edgelist', nodetype=str, data=(("weight", float), ))
 n_nodes = G.number_of_nodes()
 n_edges = G.number_of_edges() 
 print('Number of nodes:', n_nodes)
