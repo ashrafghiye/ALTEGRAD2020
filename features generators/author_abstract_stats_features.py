@@ -1,7 +1,7 @@
 """
-This code will extract somme statisical features for each authors, based on the length of its papers
+This code will extract some statisical features for each author, based on the length of its papers
 
-It will take as inputs to files : 
+It will take as inputs files : 
 - author_papers.txt
 - abstract_word_count.csv
 
