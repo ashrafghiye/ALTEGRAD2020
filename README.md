@@ -14,6 +14,7 @@ To build the model, we have access to two types of data:
 1. **Co-author Graph** that models the collaboration intensity of two researchers: i.e. whether they have co-authored any papers.
 2. **Abstracts** of the top-cited papers for each author.
 
+> https://www.kaggle.com/c/altegrad-2020
 
 # Motivation
 
@@ -54,8 +55,9 @@ his/her h-index.
 
 ## Install the requirements
 
->  `pip install -U -r requirements.txt`
-
+```
+pip install -U -r requirements.txt
+```
 ## Generate Features
 
 We have extracted some new features and created a new weighted graph of collaboration. To get all of these features into `features` folder you can run the script `feature_generators.sh` which extract the hand-crafted features explained in the report.
