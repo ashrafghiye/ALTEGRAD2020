@@ -56,7 +56,7 @@ his/her h-index.
 ## Install the requirements
 
 ```
-pip install -U -r requirements.txt
+$ pip install -U -r requirements.txt
 ```
 ## Generate Features
 
